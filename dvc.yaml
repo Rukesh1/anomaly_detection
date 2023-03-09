@@ -1,0 +1,7 @@
+stages:
+  stage1:
+    cmd: python model_training.py
+    deps:
+      - model_training.py
+    outs:
+      - anomaly_model.pkl

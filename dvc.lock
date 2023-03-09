@@ -1,0 +1,12 @@
+schema: '2.0'
+stages:
+  stage1:
+    cmd: python model_training.py
+    deps:
+    - path: model_training.py
+      md5: 72ce007d0df75ac11072ca27e3c07b33
+      size: 745
+    outs:
+    - path: anomaly_model.pkl
+      md5: 200d6d7e12bccb9fc957d325d2b72723
+      size: 385521
