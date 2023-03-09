@@ -1,11 +1,11 @@
 stages:
-  stage1:
+  train:
     cmd: python model_training.py
     deps:
       - model_training.py
     outs:
       - anomaly_model.pkl
-  stage2:
+  prediction:
     cmd: python prediction.py
     deps:
       - prediction.py
