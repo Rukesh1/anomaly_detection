@@ -27,22 +27,22 @@ stages:
     cmd: python model_training.py
     deps:
     - path: model_training.py
-      md5: a2f8c3c7eb2b82fe129b05f2cf8446d6
-      size: 743
+      md5: d256c7b24bb83c205ac7bf9578c6d5dd
+      size: 744
     outs:
     - path: anomaly_model.pkl
-      md5: 336715ba2ba683a4451be7a75817ce77
-      size: 192678
+      md5: 2b3ad464e5dbb484a6560f0e6194f8ac
+      size: 49672
   prediction:
     cmd: python prediction.py
     deps:
     - path: anomaly_model.pkl
-      md5: 336715ba2ba683a4451be7a75817ce77
-      size: 192678
+      md5: 2b3ad464e5dbb484a6560f0e6194f8ac
+      size: 49672
     - path: prediction.py
       md5: 3ff55ad0a16cb163a1d49880ed7b5a63
       size: 426
     outs:
     - path: Anomalies_detected.csv
-      md5: 22f53397e39487363575d8e5d13f3b1e
-      size: 631296
+      md5: 6145689d40551275e0b8bf62706e635f
+      size: 71995
