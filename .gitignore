@@ -128,3 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /anomaly_model.pkl
+/Anomalies_detected.csv
