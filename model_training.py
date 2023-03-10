@@ -15,3 +15,4 @@ model=IsolationForest(n_estimators=50,max_samples='auto',contamination=float(0.1
 model.fit(df_1[['total','success','needs_attention','failed','skipped']])
 pkl.dump(model, open('anomaly_model.pkl', 'wb'))
 print(model)
+print('this is branch 3')
