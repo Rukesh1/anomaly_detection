@@ -15,3 +15,5 @@ model=IsolationForest(n_estimators=10,max_samples='auto',contamination=float(0.0
 model.fit(df_1[['total','success','needs_attention','failed','skipped']])
 pkl.dump(model, open('anomaly_model.pkl', 'wb'))
 print(model)
+
+print(' tagging the version in version 2 first time')
