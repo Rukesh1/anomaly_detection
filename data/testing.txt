@@ -1,9 +1,0 @@
-Experiment 1:
-
-
-this is version2 branch, n_estimator used for training =10
-model=IsolationForest(n_estimators=10,max_samples='auto',contamination=float(0.01),random_state=random_state).
-df_1=df[['process_name','start_date','end_date','total','success','needs_attention','skipped','failed']]
-random_state = np.random.RandomState(42)
-model=IsolationForest(n_estimators=10,max_samples='auto',contamination=float(0.01),random_state=random_state)
-model.fit(df_1[['total','success','needs_attention','failed','skipped']])
