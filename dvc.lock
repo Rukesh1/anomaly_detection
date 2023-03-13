@@ -27,8 +27,8 @@ stages:
     cmd: python model_training.py
     deps:
     - path: model_training.py
-      md5: d256c7b24bb83c205ac7bf9578c6d5dd
-      size: 744
+      md5: 4b635f07db20d717cab491cbc5b9bc72
+      size: 800
     outs:
     - path: anomaly_model.pkl
       md5: 2b3ad464e5dbb484a6560f0e6194f8ac
